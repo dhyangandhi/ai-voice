@@ -1,7 +1,6 @@
 import { Headphones, ThumbsUp } from "lucide-react";
 import  Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { SidebarTrigger } from "./ui/sidebar";
 import { cn } from "@/lib/utils";
 
 export function PageHeader({
@@ -19,7 +18,6 @@ export function PageHeader({
             )}
         >
          <div className="flex itmes-center gap-2">
-            <SidebarTrigger />
             <h1 className="text-xl font-semibold">{title}</h1>
          </div>
          <div className="flex items-center gap-3">

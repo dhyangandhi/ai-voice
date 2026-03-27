@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
+import { Skeleton } from "@/components/ui/skeleton";
+import { OrganizationSwitcher, UserButton, useClerk } from "@clerk/nextjs";
 import { LucideIcon } from "lucide-react";
 import { 
     Sidebar,
@@ -17,8 +18,7 @@ import {
     SidebarRail,
     SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { Skeleton } from "@/components/ui/skeleton";
-import { OrganizationSwitcher, UserButton, useClerk } from "@clerk/nextjs";
+import Image from "next/image";
 import { 
     Home,
     LayoutGrid,
